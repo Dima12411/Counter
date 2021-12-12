@@ -23,9 +23,7 @@ function App() {
     const onChangeStart = (e: ChangeEvent<HTMLInputElement>) => {
         setStart(e.currentTarget.valueAsNumber)
     }
-    const messageOutput = () => {
 
-    }
     return (
         <div className="App">
             <div className="body">

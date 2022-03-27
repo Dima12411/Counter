@@ -1,6 +1,6 @@
 const initialState = {}
 
-const propertyForCounterReducer = (state: InitialStateType = initialState, action: any) => {
+const propertyForCounterReducer = (state = initialState, action: any) => {
     switch(action.type) {
 
         default:
@@ -8,6 +8,6 @@ const propertyForCounterReducer = (state: InitialStateType = initialState, actio
     }
 }
 
-type InitialStateType = typeof initialState
+
 
 export default propertyForCounterReducer;

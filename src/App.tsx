@@ -5,16 +5,6 @@ import PropertiesForCounter from "./components/PropertiesForCounter";
 
 
 function App() {
-    // const [start, setStart] = useState<number>(0)
-    // const [max, setMax] = useState<number>(5)
-    // const [number, setNumber] = useState<number>(start)
-    // const [message, setMessage] = useState<boolean>(false)
-    // const [errorMessage, setErrorMessage] = useState<boolean>(false)
-    // const plusNumber = () => {
-    //     if (number < max) {
-    //         setNumber(number + 1)
-    //     }
-    // }
     // useEffect(() => {
     //     let NumberAsString = localStorage.getItem('numberForCounter')
     //     if (NumberAsString) {
@@ -42,28 +32,10 @@ function App() {
     return (
         <div className="App">
             <div className="propertiesForCounter">
-                <PropertiesForCounter
-                    // start={start}
-                    // max={max}
-                    // number={number}
-                    // setNumber={setNumber}
-                    // setStart={setStart}
-                    // setMax={setMax}
-                    // setMessage={setMessage}
-                    // setErrorMessage={setErrorMessage}
-                />
+                <PropertiesForCounter/>
             </div>
             <div className="counter">
-                <Counter
-                    // number={number}
-                    // start={start}
-                    // max={max}
-                    // message={message}
-                    // errorMessage={errorMessage}
-                    // setNumber={setNumber}
-                    // plusNumber={plusNumber}
-
-                />
+                <Counter/>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #25313f;
-    height: 1920px;
+    min-height: 100vh;
 }
 
 /*Счетчик/Counter*/

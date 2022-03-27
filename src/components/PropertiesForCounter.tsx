@@ -15,12 +15,12 @@ type PropsType = {
 const PropertiesForCounter = (props: PropsType) => {
     const [disabled, setDisabled] = useState<boolean>(true)
     const startNumberHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        props.setStart(e.currentTarget.valueAsNumber)
+        props.setStart(+e.currentTarget.value)
         props.setMessage(true)
         setDisabled(false)
     }
     const maxNumberHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        props.setMax(e.currentTarget.valueAsNumber)
+        props.setMax(+e.currentTarget.value)
         props.setMessage(true)
         setDisabled(false)
     }

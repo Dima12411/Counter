@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import Button from "./Button";
 import {useDispatch, useSelector} from "react-redux";
 import {RootReducerType} from "../bll/store";
@@ -7,6 +7,7 @@ import {InitialStateType, plusValueAC, resetValueAC, setErrorMessageAC} from "..
 const Counter = () => {
     const counter = useSelector<RootReducerType, InitialStateType>(state => state.counter)
     const dispatch = useDispatch()
+
     const plusNumberHandler = () => {
         dispatch(plusValueAC())
     }

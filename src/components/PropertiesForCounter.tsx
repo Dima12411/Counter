@@ -32,6 +32,7 @@ const PropertiesForCounter = () => {
     }
 
     const disabledButtonSet = counter.startValue < 0 || counter.maxValue < 0 || counter.startValue === counter.maxValue
+        || counter.startValue > counter.maxValue
         ? true
         : disabled
 
